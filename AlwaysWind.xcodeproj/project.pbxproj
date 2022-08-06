@@ -7,22 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A74042C3289D82A90095F924 /* AlwaysWindWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74042C2289D82A90095F924 /* AlwaysWindWatchApp.swift */; };
+		A74042C7289D82AB0095F924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74042C6289D82AB0095F924 /* Assets.xcassets */; };
+		A74042CA289D82AB0095F924 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74042C9289D82AB0095F924 /* Preview Assets.xcassets */; };
+		A74042CD289D82AB0095F924 /* AlwaysWindWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A74042C0289D82A90095F924 /* AlwaysWindWatch Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A74042D2289D82DA0095F924 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74042C4289D82A90095F924 /* ContentView.swift */; };
+		A74042D4289D83050095F924 /* WindData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A617A92896BF980077E79E /* WindData.swift */; };
+		A74042D6289D83190095F924 /* WindData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74042D5289D83190095F924 /* WindData.swift */; };
+		A763B5CE289DDD73001BC8AE /* WindSpeedComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A763B5CD289DDD73001BC8AE /* WindSpeedComplication.swift */; };
 		A789830F2896AD4C001667F7 /* AlwaysWindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789830E2896AD4C001667F7 /* AlwaysWindApp.swift */; };
 		A78983112896AD4C001667F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78983102896AD4C001667F7 /* ContentView.swift */; };
 		A78983132896AD4E001667F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A78983122896AD4E001667F7 /* Assets.xcassets */; };
 		A78983172896AD4E001667F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A78983162896AD4E001667F7 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A74042CB289D82AB0095F924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A78983032896AD4C001667F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A74042BF289D82A80095F924;
+			remoteInfo = "AlwaysWindWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A763B5CA289DD51B001BC8AE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A763B5E0289DDEDE001BC8AE /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A617A82896BF780077E79E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A74042CD289D82AB0095F924 /* AlwaysWindWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A74042C0289D82A90095F924 /* AlwaysWindWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AlwaysWindWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74042C2289D82A90095F924 /* AlwaysWindWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysWindWatchApp.swift; sourceTree = "<group>"; };
+		A74042C4289D82A90095F924 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "AlwaysWindWatch Watch App/ContentView.swift"; sourceTree = SOURCE_ROOT; };
+		A74042C6289D82AB0095F924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A74042C9289D82AB0095F924 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A74042D5289D83190095F924 /* WindData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindData.swift; sourceTree = "<group>"; };
+		A763B5B7289DD519001BC8AE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A763B5B9289DD519001BC8AE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A763B5CD289DDD73001BC8AE /* WindSpeedComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindSpeedComplication.swift; sourceTree = "<group>"; };
 		A789830B2896AD4C001667F7 /* AlwaysWind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlwaysWind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A789830E2896AD4C001667F7 /* AlwaysWindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysWindApp.swift; sourceTree = "<group>"; };
 		A78983102896AD4C001667F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A78983122896AD4E001667F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A78983142896AD4E001667F7 /* AlwaysWind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlwaysWind.entitlements; sourceTree = "<group>"; };
 		A78983162896AD4E001667F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7A617A92896BF980077E79E /* WindData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A74042BD289D82A80095F924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A78983082896AD4C001667F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,10 +102,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A74042C1289D82A90095F924 /* AlwaysWindWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				A74042C2289D82A90095F924 /* AlwaysWindWatchApp.swift */,
+				A74042C4289D82A90095F924 /* ContentView.swift */,
+				A74042D5289D83190095F924 /* WindData.swift */,
+				A763B5CD289DDD73001BC8AE /* WindSpeedComplication.swift */,
+				A74042C6289D82AB0095F924 /* Assets.xcassets */,
+				A74042C8289D82AB0095F924 /* Preview Content */,
+			);
+			path = "AlwaysWindWatch Watch App";
+			sourceTree = "<group>";
+		};
+		A74042C8289D82AB0095F924 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A74042C9289D82AB0095F924 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A763B5B6289DD519001BC8AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A763B5B7289DD519001BC8AE /* WidgetKit.framework */,
+				A763B5B9289DD519001BC8AE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A78983022896AD4C001667F7 = {
 			isa = PBXGroup;
 			children = (
 				A789830D2896AD4C001667F7 /* AlwaysWind */,
+				A74042C1289D82A90095F924 /* AlwaysWindWatch Watch App */,
+				A763B5B6289DD519001BC8AE /* Frameworks */,
 				A789830C2896AD4C001667F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				A789830B2896AD4C001667F7 /* AlwaysWind.app */,
+				A74042C0289D82A90095F924 /* AlwaysWindWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +156,7 @@
 			children = (
 				A789830E2896AD4C001667F7 /* AlwaysWindApp.swift */,
 				A78983102896AD4C001667F7 /* ContentView.swift */,
+				A7A617A92896BF980077E79E /* WindData.swift */,
 				A78983122896AD4E001667F7 /* Assets.xcassets */,
 				A78983142896AD4E001667F7 /* AlwaysWind.entitlements */,
 				A78983152896AD4E001667F7 /* Preview Content */,
@@ -72,6 +175,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A74042BF289D82A80095F924 /* AlwaysWindWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A74042CE289D82AB0095F924 /* Build configuration list for PBXNativeTarget "AlwaysWindWatch Watch App" */;
+			buildPhases = (
+				A74042BC289D82A80095F924 /* Sources */,
+				A74042BD289D82A80095F924 /* Frameworks */,
+				A74042BE289D82A80095F924 /* Resources */,
+				A763B5CA289DD51B001BC8AE /* Embed Foundation Extensions */,
+				A763B5E0289DDEDE001BC8AE /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlwaysWindWatch Watch App";
+			productName = "AlwaysWindWatch Watch App";
+			productReference = A74042C0289D82A90095F924 /* AlwaysWindWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A789830A2896AD4C001667F7 /* AlwaysWind */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A789831A2896AD4E001667F7 /* Build configuration list for PBXNativeTarget "AlwaysWind" */;
@@ -79,12 +201,16 @@
 				A78983072896AD4C001667F7 /* Sources */,
 				A78983082896AD4C001667F7 /* Frameworks */,
 				A78983092896AD4C001667F7 /* Resources */,
+				A7A617A82896BF780077E79E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A74042CC289D82AB0095F924 /* PBXTargetDependency */,
 			);
 			name = AlwaysWind;
+			packageProductDependencies = (
+			);
 			productName = AlwaysWind;
 			productReference = A789830B2896AD4C001667F7 /* AlwaysWind.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +225,9 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					A74042BF289D82A80095F924 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					A789830A2896AD4C001667F7 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -113,16 +242,28 @@
 				Base,
 			);
 			mainGroup = A78983022896AD4C001667F7;
+			packageReferences = (
+			);
 			productRefGroup = A789830C2896AD4C001667F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A789830A2896AD4C001667F7 /* AlwaysWind */,
+				A74042BF289D82A80095F924 /* AlwaysWindWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A74042BE289D82A80095F924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74042CA289D82AB0095F924 /* Preview Assets.xcassets in Resources */,
+				A74042C7289D82AB0095F924 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A78983092896AD4C001667F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,18 +276,100 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A74042BC289D82A80095F924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74042D2289D82DA0095F924 /* ContentView.swift in Sources */,
+				A74042C3289D82A90095F924 /* AlwaysWindWatchApp.swift in Sources */,
+				A74042D6289D83190095F924 /* WindData.swift in Sources */,
+				A763B5CE289DDD73001BC8AE /* WindSpeedComplication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A78983072896AD4C001667F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A78983112896AD4C001667F7 /* ContentView.swift in Sources */,
 				A789830F2896AD4C001667F7 /* AlwaysWindApp.swift in Sources */,
+				A74042D4289D83050095F924 /* WindData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A74042CC289D82AB0095F924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = A74042BF289D82A80095F924 /* AlwaysWindWatch Watch App */;
+			targetProxy = A74042CB289D82AB0095F924 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A74042CF289D82AB0095F924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AlwaysWindWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = AY235446A3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AlwaysWindWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = xyz.docsystem.AlwaysWind;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.docsystem.AlwaysWind.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		A74042D0289D82AB0095F924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AlwaysWindWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = AY235446A3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AlwaysWindWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = xyz.docsystem.AlwaysWind;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.docsystem.AlwaysWind.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		A78983182896AD4E001667F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -259,9 +482,11 @@
 		A789831B2896AD4E001667F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AlwaysWind/AlwaysWind.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlwaysWind/Preview Content\"";
@@ -277,8 +502,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -297,9 +522,11 @@
 		A789831C2896AD4E001667F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AlwaysWind/AlwaysWind.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlwaysWind/Preview Content\"";
@@ -315,8 +542,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -335,6 +562,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A74042CE289D82AB0095F924 /* Build configuration list for PBXNativeTarget "AlwaysWindWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A74042CF289D82AB0095F924 /* Debug */,
+				A74042D0289D82AB0095F924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A78983062896AD4C001667F7 /* Build configuration list for PBXProject "AlwaysWind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

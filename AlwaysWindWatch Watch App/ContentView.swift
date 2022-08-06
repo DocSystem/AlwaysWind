@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  AlwaysWind
+//  AlwaysWindWatch Watch App
 //
-//  Created by Antoine Souben-Fink on 31/07/2022.
+//  Created by Antoine Souben-Fink on 05/08/2022.
 //
 
 import SwiftUI
@@ -122,17 +122,15 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 Image(systemName: "arrow.up")
-                    .resizable()
-                    .rotationEffect(Angle(degrees: Double(liveData.wind_rt.dir)))
-                    .frame(width: UIScreen.main.bounds.width/3, height: UIScreen.main.bounds.width/3)
-                    .aspectRatio(contentMode: .fit)
-                Text("\(liveData.wind_rt.dir)° \(self.calcWindDir(windDegree: liveData.wind_rt.dir))")
                     .font(.title)
+                    .rotationEffect(Angle(degrees: Double(liveData.wind_rt.dir)))
+                Text("\(liveData.wind_rt.dir)° \(self.calcWindDir(windDegree: liveData.wind_rt.dir))")
+                    .font(.title3)
                 Spacer()
                 Text("\(liveWindSpeed) nœuds")
-                    .font(.largeTitle)
+                    .font(.title2)
                 Text("Force \(liveWindForce)")
-                    .font(.title)
+                    .font(.title3)
                     .foregroundColor(getColorByWindForce(windForce: liveWindForce))
                 Spacer()
             }
@@ -140,34 +138,24 @@ struct ContentView: View {
                 .onReceive(liveTimer) {_ in
                     self.getLiveData()
                 }
-                .tabItem {
-                    Image(systemName: "play.circle")
-                    Text("Live")
-                }
             VStack {
                 Spacer()
                 Image(systemName: "arrow.up")
-                    .resizable()
-                    .rotationEffect(Angle(degrees: Double(averageData.wind.dir_avg)))
-                    .frame(width: UIScreen.main.bounds.width/3, height: UIScreen.main.bounds.width/3)
-                    .aspectRatio(contentMode: .fit)
-                Text("\(averageWindDirection)° \(self.calcWindDir(windDegree: Int(averageData.wind.dir_avg)))")
                     .font(.title)
+                    .rotationEffect(Angle(degrees: Double(averageData.wind.dir_avg)))
+                Text("\(averageWindDirection)° \(self.calcWindDir(windDegree: Int(averageData.wind.dir_avg)))")
+                    .font(.title3)
                 Spacer()
                 Text("\(averageWindSpeed) nœuds")
-                    .font(.largeTitle)
+                    .font(.title2)
                 Text("Force \(averageWindForce)")
-                    .font(.title)
+                    .font(.title3)
                     .foregroundColor(getColorByWindForce(windForce: averageWindForce))
                 Spacer()
             }
                 .onAppear(perform: self.getAverageData)
                 .onReceive(averageTimer) {_ in
                     self.getAverageData()
-                }
-                .tabItem {
-                    Image(systemName: "wind.circle")
-                    Text("Average")
                 }
         }
     }
