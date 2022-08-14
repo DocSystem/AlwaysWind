@@ -121,7 +121,7 @@ struct ContentView: View {
         TabView {
             VStack {
                 Spacer()
-                Image(systemName: "arrow.up")
+                Image(systemName: "arrow.down")
                     .resizable()
                     .rotationEffect(Angle(degrees: Double(liveData.wind_rt.dir)))
                     .frame(width: UIScreen.main.bounds.width/3, height: UIScreen.main.bounds.width/3)
@@ -146,7 +146,7 @@ struct ContentView: View {
                 }
             VStack {
                 Spacer()
-                Image(systemName: "arrow.up")
+                Image(systemName: "arrow.down")
                     .resizable()
                     .rotationEffect(Angle(degrees: Double(averageData.wind.dir_avg)))
                     .frame(width: UIScreen.main.bounds.width/3, height: UIScreen.main.bounds.width/3)

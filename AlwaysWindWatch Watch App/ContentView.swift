@@ -121,7 +121,7 @@ struct ContentView: View {
         TabView {
             VStack {
                 Spacer()
-                Image(systemName: "arrow.up")
+                Image(systemName: "arrow.down")
                     .font(.title)
                     .rotationEffect(Angle(degrees: Double(liveData.wind_rt.dir)))
                 Text("\(liveData.wind_rt.dir)° \(self.calcWindDir(windDegree: liveData.wind_rt.dir))")
@@ -140,7 +140,7 @@ struct ContentView: View {
                 }
             VStack {
                 Spacer()
-                Image(systemName: "arrow.up")
+                Image(systemName: "arrow.down")
                     .font(.title)
                     .rotationEffect(Angle(degrees: Double(averageData.wind.dir_avg)))
                 Text("\(averageWindDirection)° \(self.calcWindDir(windDegree: Int(averageData.wind.dir_avg)))")
