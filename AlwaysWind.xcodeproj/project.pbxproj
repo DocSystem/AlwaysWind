@@ -14,6 +14,7 @@
 		A74042D2289D82DA0095F924 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74042C4289D82A90095F924 /* ContentView.swift */; };
 		A74042D4289D83050095F924 /* WindData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A617A92896BF980077E79E /* WindData.swift */; };
 		A74042D6289D83190095F924 /* WindData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74042D5289D83190095F924 /* WindData.swift */; };
+		A757485028ADAE6E00C23C21 /* CompassHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A757484F28ADAE6E00C23C21 /* CompassHeading.swift */; };
 		A763B5CE289DDD73001BC8AE /* WindSpeedComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A763B5CD289DDD73001BC8AE /* WindSpeedComplication.swift */; };
 		A789830F2896AD4C001667F7 /* AlwaysWindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789830E2896AD4C001667F7 /* AlwaysWindApp.swift */; };
 		A78983112896AD4C001667F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78983102896AD4C001667F7 /* ContentView.swift */; };
@@ -72,6 +73,7 @@
 		A74042C6289D82AB0095F924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A74042C9289D82AB0095F924 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A74042D5289D83190095F924 /* WindData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindData.swift; sourceTree = "<group>"; };
+		A757484F28ADAE6E00C23C21 /* CompassHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassHeading.swift; sourceTree = "<group>"; };
 		A763B5B7289DD519001BC8AE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A763B5B9289DD519001BC8AE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		A763B5CD289DDD73001BC8AE /* WindSpeedComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindSpeedComplication.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				A789830E2896AD4C001667F7 /* AlwaysWindApp.swift */,
 				A78983102896AD4C001667F7 /* ContentView.swift */,
+				A757484F28ADAE6E00C23C21 /* CompassHeading.swift */,
 				A7A617A92896BF980077E79E /* WindData.swift */,
 				A78983122896AD4E001667F7 /* Assets.xcassets */,
 				A78983142896AD4E001667F7 /* AlwaysWind.entitlements */,
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A78983112896AD4C001667F7 /* ContentView.swift in Sources */,
+				A757485028ADAE6E00C23C21 /* CompassHeading.swift in Sources */,
 				A789830F2896AD4C001667F7 /* AlwaysWindApp.swift in Sources */,
 				A74042D4289D83050095F924 /* WindData.swift in Sources */,
 			);
